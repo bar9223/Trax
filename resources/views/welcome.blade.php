@@ -70,6 +70,8 @@
                 <div class="top-right links">
                     @auth
                         <a href="{{ url('/home') }}">Home</a>
+                        <a href="{{ route('cars.index') }}">Cars</a>
+                        <a href="{{ route('trips.index') }}">Trips</a>
                     @else
                         <a href="{{ route('login') }}">Login</a>
                         <a href="{{ route('register') }}">Register</a>
